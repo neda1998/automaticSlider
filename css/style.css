@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 80vw;
+  border-radius: 5px;
+  position: relative;
+}
+
+.slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  transform: translateY(-50%);
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+img.slide {
+  min-width: 100%;
+  min-height: 250px;
+  height: auto;
+  object-fit: cover;
+}
